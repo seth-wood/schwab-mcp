@@ -334,5 +334,5 @@ export default new OAuthProvider({
 	apiHandler: MyMCP.mount(API_ENDPOINTS.SSE) as any, // Cast remains due to library typing
 	defaultHandler: SchwabHandler as any, // Cast remains
 	authorizeEndpoint: API_ENDPOINTS.AUTHORIZE,
-	tokenEndpoint: API_ENDPOINTS.TOKEN,
+	tokenEndpoint: API_ENDPOINTS.TOKEN, clientRegistrationEndpoint: '/register',
 })
